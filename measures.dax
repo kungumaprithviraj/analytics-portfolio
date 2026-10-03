@@ -1,3 +1,4 @@
-Sessions = COUNTROWS(records)
-Watch Hours = DIVIDE(SUM(records[watch_minutes]), 60)
-Completion Rate = AVERAGE(records[completed])
+Net Revenue = SUM(records[revenue_inr])
+Profit = SUM(records[profit_inr])
+Margin = DIVIDE([Profit], [Net Revenue])
+Average Order Value = DIVIDE([Net Revenue], COUNTROWS(records))

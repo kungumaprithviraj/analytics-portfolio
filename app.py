@@ -1,6 +1,6 @@
-TITLE = 'Netflix-style Streaming Analytics'
-GROUP = 'genre'
-VALUE = 'watch_minutes'
+TITLE = 'Black Friday Sales Reporting'
+GROUP = 'category'
+VALUE = 'revenue_inr'
 from pathlib import Path
 import pandas as pd
 import streamlit as st
@@ -14,9 +14,9 @@ if df.empty:
     st.info("Select at least one category to view results.")
     st.stop()
 a,b,c=st.columns(3)
-a.metric('Sessions',len(df))
-b.metric('Watch hours',f"{df.watch_minutes.sum()/60:,.1f}")
-c.metric('Session completion rate',f"{df.completed.mean():.1%}")
+a.metric('Net revenue (INR)',f"{df.revenue_inr.sum():,.0f}")
+b.metric('Profit (INR)',f"{df.profit_inr.sum():,.0f}")
+c.metric('Average order value (INR)',f"{df.revenue_inr.mean():,.0f}")
 st.subheader("Breakdown by " + GROUP)
 summary = df.groupby(GROUP).agg(records=(GROUP,"size"), total=(VALUE,"sum"), average=(VALUE,"mean"))
 st.bar_chart(summary["total"])

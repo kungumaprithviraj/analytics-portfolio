@@ -1,50 +1,78 @@
 [
   [
     {
-      "genre": "Comedy",
-      "sessions": 765,
-      "watch_hours": 441.88,
-      "completion_pct": 12.68
+      "category": "Beauty",
+      "revenue": 2543363.15,
+      "profit": 842690.69,
+      "margin_pct": 33.13
     },
     {
-      "genre": "Documentary",
-      "sessions": 724,
-      "watch_hours": 412.85,
-      "completion_pct": 11.33
+      "category": "Books",
+      "revenue": 2812174.45,
+      "profit": 963700.24,
+      "margin_pct": 34.27
     },
     {
-      "genre": "Drama",
-      "sessions": 736,
-      "watch_hours": 420.28,
-      "completion_pct": 10.6
+      "category": "Electronics",
+      "revenue": 2894403.3,
+      "profit": 1019438.16,
+      "margin_pct": 35.22
     },
     {
-      "genre": "Thriller",
-      "sessions": 775,
-      "watch_hours": 445.52,
-      "completion_pct": 10.97
+      "category": "Fashion",
+      "revenue": 2455296.25,
+      "profit": 833135.51,
+      "margin_pct": 33.93
+    },
+    {
+      "category": "Home",
+      "revenue": 2718037.95,
+      "profit": 950094.01,
+      "margin_pct": 34.96
     }
   ],
   [
     {
-      "device": "Mobile",
-      "viewers": 448,
-      "watch_minutes": 26704.0
+      "order_date": "2025-11-24",
+      "orders": 378,
+      "revenue": 1996069.9,
+      "average_order_value": 5280.61
     },
     {
-      "device": "TV",
-      "viewers": 432,
-      "watch_minutes": 25488.0
+      "order_date": "2025-11-25",
+      "orders": 344,
+      "revenue": 1777796.15,
+      "average_order_value": 5168.01
     },
     {
-      "device": "Tablet",
-      "viewers": 422,
-      "watch_minutes": 24308.0
+      "order_date": "2025-11-26",
+      "orders": 356,
+      "revenue": 1946006.3,
+      "average_order_value": 5466.31
     },
     {
-      "device": "Web",
-      "viewers": 436,
-      "watch_minutes": 26732.0
+      "order_date": "2025-11-27",
+      "orders": 363,
+      "revenue": 1992390.35,
+      "average_order_value": 5488.68
+    },
+    {
+      "order_date": "2025-11-28",
+      "orders": 334,
+      "revenue": 1775781.95,
+      "average_order_value": 5316.71
+    },
+    {
+      "order_date": "2025-11-29",
+      "orders": 351,
+      "revenue": 1946746.9,
+      "average_order_value": 5546.29
+    },
+    {
+      "order_date": "2025-11-30",
+      "orders": 374,
+      "revenue": 1988483.55,
+      "average_order_value": 5316.8
     }
   ]
 ]
