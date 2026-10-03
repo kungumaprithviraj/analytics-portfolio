@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "department": "Finance",
+      "employees": 154,
+      "snapshot_attrition_pct": 16.23,
+      "avg_salary": 93610.39
+    },
+    {
+      "department": "HR",
+      "employees": 164,
+      "snapshot_attrition_pct": 11.59,
+      "avg_salary": 94067.07
+    },
+    {
+      "department": "Operations",
+      "employees": 157,
+      "snapshot_attrition_pct": 15.92,
+      "avg_salary": 96133.76
+    },
+    {
+      "department": "Sales",
+      "employees": 165,
+      "snapshot_attrition_pct": 15.76,
+      "avg_salary": 89684.85
+    },
+    {
+      "department": "Technology",
+      "employees": 160,
+      "snapshot_attrition_pct": 18.13,
+      "avg_salary": 94312.5
+    }
+  ],
+  [
+    {
+      "overtime": "No",
+      "employees": 428,
+      "snapshot_attrition_pct": 14.02
+    },
+    {
+      "overtime": "Yes",
+      "employees": 372,
+      "snapshot_attrition_pct": 17.2
+    }
+  ]
+]
