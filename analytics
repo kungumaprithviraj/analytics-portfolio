@@ -1,0 +1,6 @@
+init
+add .
+commit -m "Add three analytics portfolio projects"
+branch -M main
+remote add origin https://github.com/YOUR_USERNAME/analytics-portfolio.git
+push -u origin main
