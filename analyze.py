@@ -4,10 +4,10 @@ base=Path(__file__).parent
 with (base/'data/sample.csv').open() as f:
     reader=csv.reader(f); columns=next(reader); rows=list(reader)
 connection=sqlite3.connect(':memory:')
-numeric=['age', 'tenure_years', 'monthly_salary_inr']
+numeric=['watch_minutes', 'duration_minutes', 'completed']
 connection.execute('CREATE TABLE records (' + ','.join('"'+c+'" '+('REAL' if c in numeric else 'TEXT') for c in columns)+')')
 connection.executemany('INSERT INTO records VALUES ('+','.join('?' for _ in columns)+')',rows)
-assert connection.execute('SELECT COUNT(*) FROM records').fetchone()[0] == 800
+assert connection.execute('SELECT COUNT(*) FROM records').fetchone()[0] == 3000
 assert len({row[0] for row in rows}) == len(rows), 'Duplicate primary key'
 for col in numeric:
     assert all(float(row[columns.index(col)]) >= 0 for row in rows), col

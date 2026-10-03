@@ -1,46 +1,50 @@
 [
   [
     {
-      "department": "Finance",
-      "employees": 154,
-      "snapshot_attrition_pct": 16.23,
-      "avg_salary": 93610.39
+      "genre": "Comedy",
+      "sessions": 765,
+      "watch_hours": 441.88,
+      "completion_pct": 12.68
     },
     {
-      "department": "HR",
-      "employees": 164,
-      "snapshot_attrition_pct": 11.59,
-      "avg_salary": 94067.07
+      "genre": "Documentary",
+      "sessions": 724,
+      "watch_hours": 412.85,
+      "completion_pct": 11.33
     },
     {
-      "department": "Operations",
-      "employees": 157,
-      "snapshot_attrition_pct": 15.92,
-      "avg_salary": 96133.76
+      "genre": "Drama",
+      "sessions": 736,
+      "watch_hours": 420.28,
+      "completion_pct": 10.6
     },
     {
-      "department": "Sales",
-      "employees": 165,
-      "snapshot_attrition_pct": 15.76,
-      "avg_salary": 89684.85
-    },
-    {
-      "department": "Technology",
-      "employees": 160,
-      "snapshot_attrition_pct": 18.13,
-      "avg_salary": 94312.5
+      "genre": "Thriller",
+      "sessions": 775,
+      "watch_hours": 445.52,
+      "completion_pct": 10.97
     }
   ],
   [
     {
-      "overtime": "No",
-      "employees": 428,
-      "snapshot_attrition_pct": 14.02
+      "device": "Mobile",
+      "viewers": 448,
+      "watch_minutes": 26704.0
     },
     {
-      "overtime": "Yes",
-      "employees": 372,
-      "snapshot_attrition_pct": 17.2
+      "device": "TV",
+      "viewers": 432,
+      "watch_minutes": 25488.0
+    },
+    {
+      "device": "Tablet",
+      "viewers": 422,
+      "watch_minutes": 24308.0
+    },
+    {
+      "device": "Web",
+      "viewers": 436,
+      "watch_minutes": 26732.0
     }
   ]
 ]

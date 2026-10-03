@@ -1,3 +1,3 @@
-Employees = COUNTROWS(records)
-Snapshot Attrition Rate = DIVIDE(CALCULATE(COUNTROWS(records), records[attrition] = "Yes"), [Employees])
-Average Salary = AVERAGE(records[monthly_salary_inr])
+Sessions = COUNTROWS(records)
+Watch Hours = DIVIDE(SUM(records[watch_minutes]), 60)
+Completion Rate = AVERAGE(records[completed])

@@ -1,6 +1,6 @@
-TITLE = 'HR Analytics & Workforce Reporting'
-GROUP = 'department'
-VALUE = 'monthly_salary_inr'
+TITLE = 'Netflix-style Streaming Analytics'
+GROUP = 'genre'
+VALUE = 'watch_minutes'
 from pathlib import Path
 import pandas as pd
 import streamlit as st
@@ -14,9 +14,9 @@ if df.empty:
     st.info("Select at least one category to view results.")
     st.stop()
 a,b,c=st.columns(3)
-a.metric('Employees',len(df))
-b.metric('Snapshot attrition rate',f"{df.attrition.eq('Yes').mean():.1%}")
-c.metric('Average monthly salary (INR)',f"{df.monthly_salary_inr.mean():,.0f}")
+a.metric('Sessions',len(df))
+b.metric('Watch hours',f"{df.watch_minutes.sum()/60:,.1f}")
+c.metric('Session completion rate',f"{df.completed.mean():.1%}")
 st.subheader("Breakdown by " + GROUP)
 summary = df.groupby(GROUP).agg(records=(GROUP,"size"), total=(VALUE,"sum"), average=(VALUE,"mean"))
 st.bar_chart(summary["total"])

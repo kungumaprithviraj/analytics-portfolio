@@ -1,3 +1,3 @@
 -- SQLite dialect. Load data/sample.csv into the records table.
-SELECT department, COUNT(*) AS employees, ROUND(100.0*SUM(CASE WHEN attrition='Yes' THEN 1 ELSE 0 END)/COUNT(*),2) AS snapshot_attrition_pct, ROUND(AVG(monthly_salary_inr),2) AS avg_salary FROM records GROUP BY department;
-SELECT overtime, COUNT(*) AS employees, ROUND(100.0*SUM(CASE WHEN attrition='Yes' THEN 1 ELSE 0 END)/COUNT(*),2) AS snapshot_attrition_pct FROM records GROUP BY overtime;
+SELECT genre, COUNT(*) AS sessions, ROUND(SUM(watch_minutes)/60.0,2) AS watch_hours, ROUND(100.0*AVG(completed),2) AS completion_pct FROM records GROUP BY genre;
+SELECT device, COUNT(DISTINCT user_id) AS viewers, SUM(watch_minutes) AS watch_minutes FROM records GROUP BY device;
